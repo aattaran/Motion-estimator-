@@ -1,0 +1,71 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : motion_estimator
+Version: J-2014.12-SP3
+Date   : Sun Dec 18 15:21:49 2016
+****************************************
+
+Warning: There are 9 invalid end points for constrained paths. (UITE-416)
+
+  Startpoint: u22/count_reg[3]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u1/Accumulate_reg[1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u22/count_reg[3]/CLK (DFFX1_HVT)         0.00       0.00 r
+  u22/count_reg[3]/QN (DFFX1_HVT)          0.09       0.09 r
+  u22/U91/Y (NAND2X0_LVT)                  0.06       0.15 f
+  u22/U67/Y (INVX1_LVT)                    0.03       0.18 r
+  u22/U108/Y (NAND2X0_LVT)                 0.06       0.24 f
+  u22/U92/Y (INVX1_LVT)                    0.03       0.27 r
+  u22/U109/Y (NAND2X0_LVT)                 0.06       0.33 f
+  u1/U16/Y (INVX1_LVT)                     0.04       0.37 r
+  u1/U36/Y (AO22X1_LVT)                    0.04       0.41 r
+  u1/U43/Y (AND2X1_HVT)                    0.04       0.45 r
+  u1/U44/Y (AND2X1_HVT)                    0.03       0.48 r
+  u1/U45/Y (OA222X1_HVT)                   0.06       0.54 r
+  u1/U46/Y (AO221X1_HVT)                   0.05       0.59 r
+  u1/U47/Y (OA221X1_HVT)                   0.05       0.64 r
+  u1/U48/Y (AO221X1_HVT)                   0.05       0.69 r
+  u1/U49/Y (OA221X1_HVT)                   0.05       0.73 r
+  u1/U50/Y (AO21X1_HVT)                    0.03       0.77 r
+  u1/U33/Y (AOI22X1_LVT)                   0.05       0.82 f
+  u1/U18/Y (INVX1_LVT)                     0.03       0.85 r
+  u1/U40/Y (AO22X1_LVT)                    0.04       0.88 r
+  u1/add_22/U1/Y (AND2X1_LVT)              0.03       0.91 r
+  u1/add_22/U1_1/CO (FADDX1_HVT)           0.06       0.97 r
+  u1/add_22/U1_2/CO (FADDX1_HVT)           0.07       1.04 r
+  u1/add_22/U1_3/CO (FADDX1_HVT)           0.07       1.10 r
+  u1/add_22/U1_4/CO (FADDX1_HVT)           0.07       1.17 r
+  u1/add_22/U1_5/CO (FADDX1_HVT)           0.07       1.23 r
+  u1/add_22/U1_6/CO (FADDX1_HVT)           0.07       1.30 r
+  u1/add_22/U1_7/CO (FADDX1_HVT)           0.06       1.36 r
+  u1/U26/Y (AND2X1_LVT)                    0.04       1.39 r
+  u1/U25/Y (AO221X1_LVT)                   0.04       1.43 r
+  u1/Accumulate_reg[1]/D (DFFX1_HVT)       0.00       1.43 r
+  data arrival time                                   1.43
+
+  clock clk (rise edge)                    3.84       3.84
+  clock network delay (ideal)              0.00       3.84
+  clock reconvergence pessimism            0.00       3.84
+  u1/Accumulate_reg[1]/CLK (DFFX1_HVT)                3.84 r
+  library setup time                      -0.04       3.80
+  data required time                                  3.80
+  ---------------------------------------------------------------
+  data required time                                  3.80
+  data arrival time                                  -1.43
+  ---------------------------------------------------------------
+  slack (MET)                                         2.36
+
+
+1

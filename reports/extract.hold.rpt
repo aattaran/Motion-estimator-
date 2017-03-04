@@ -1,0 +1,624 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 20
+Design : motion_estimator
+Version: I-2013.12-ICC-SP3
+Date   : Sun Dec 18 15:25:13 2016
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ff0p85v125c   Library: saed32hvt_ff0p85v125c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays =  7.99%
+
+Information: Percent of CCS-based delays =  0.36%
+
+  Startpoint: u7/Rpipe_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u8/Rpipe_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u7/Rpipe_reg[0]/CLK (DFFX1_LVT)          0.00       0.01 r
+  u7/Rpipe_reg[0]/Q (DFFX1_LVT)            0.08       0.09 r
+  u7/Rpipe[0] (PE_8)                       0.00       0.09 r
+  u8/R[0] (PE_7)                           0.00       0.09 r
+  u8/Rpipe_reg[0]/D (DFFX1_LVT)            0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.02       0.02
+  u8/Rpipe_reg[0]/CLK (DFFX1_LVT)          0.00       0.02 r
+  library hold time                        0.00       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: u8/Rpipe_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u9/Rpipe_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u8/Rpipe_reg[5]/CLK (DFFX1_LVT)          0.00       0.01 r
+  u8/Rpipe_reg[5]/Q (DFFX1_LVT)            0.08       0.09 r
+  u8/Rpipe[5] (PE_7)                       0.00       0.09 r
+  u9/R[5] (PE_6)                           0.00       0.09 r
+  u9/Rpipe_reg[5]/D (DFFX1_LVT)            0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u9/Rpipe_reg[5]/CLK (DFFX1_LVT)          0.00       0.01 r
+  library hold time                        0.00       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: u6/Rpipe_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u7/Rpipe_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.00       0.00
+  u6/Rpipe_reg[1]/CLK (DFFX1_LVT)          0.00       0.00 r
+  u6/Rpipe_reg[1]/Q (DFFX1_LVT)            0.09       0.09 r
+  u6/Rpipe[1] (PE_9)                       0.00       0.09 r
+  u7/R[1] (PE_8)                           0.00       0.09 r
+  u7/Rpipe_reg[1]/D (DFFX1_LVT)            0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u7/Rpipe_reg[1]/CLK (DFFX1_LVT)          0.00       0.01 r
+  library hold time                        0.00       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: u6/Rpipe_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u7/Rpipe_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.00       0.00
+  u6/Rpipe_reg[3]/CLK (DFFX1_LVT)          0.00       0.00 r
+  u6/Rpipe_reg[3]/Q (DFFX1_LVT)            0.09       0.09 r
+  u6/Rpipe[3] (PE_9)                       0.00       0.09 r
+  u7/R[3] (PE_8)                           0.00       0.09 r
+  u7/Rpipe_reg[3]/D (DFFX1_LVT)            0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u7/Rpipe_reg[3]/CLK (DFFX1_LVT)          0.00       0.01 r
+  library hold time                        0.00       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: u8/Rpipe_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u9/Rpipe_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u8/Rpipe_reg[4]/CLK (DFFX1_LVT)          0.00       0.01 r
+  u8/Rpipe_reg[4]/Q (DFFX1_LVT)            0.08       0.09 r
+  u8/Rpipe[4] (PE_7)                       0.00       0.09 r
+  u9/R[4] (PE_6)                           0.00       0.09 r
+  u9/Rpipe_reg[4]/D (DFFX1_LVT)            0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u9/Rpipe_reg[4]/CLK (DFFX1_LVT)          0.00       0.01 r
+  library hold time                        0.00       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: u6/Rpipe_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u7/Rpipe_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.00       0.00
+  u6/Rpipe_reg[4]/CLK (DFFX1_LVT)          0.00       0.00 r
+  u6/Rpipe_reg[4]/Q (DFFX1_LVT)            0.09       0.09 r
+  u6/Rpipe[4] (PE_9)                       0.00       0.09 r
+  u7/R[4] (PE_8)                           0.00       0.09 r
+  u7/Rpipe_reg[4]/D (DFFX1_LVT)            0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u7/Rpipe_reg[4]/CLK (DFFX1_LVT)          0.00       0.01 r
+  library hold time                        0.00       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: u5/Rpipe_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u6/Rpipe_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.00       0.00
+  u5/Rpipe_reg[1]/CLK (DFFX1_LVT)          0.00       0.00 r
+  u5/Rpipe_reg[1]/Q (DFFX1_LVT)            0.08       0.08 r
+  u5/Rpipe[1] (PE_10)                      0.00       0.08 r
+  u6/R[1] (PE_9)                           0.00       0.08 r
+  u6/Rpipe_reg[1]/D (DFFX1_LVT)            0.00 &     0.08 r
+  data arrival time                                   0.08
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.00       0.00
+  u6/Rpipe_reg[1]/CLK (DFFX1_LVT)          0.00       0.00 r
+  library hold time                        0.00       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: u6/Rpipe_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u7/Rpipe_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.00       0.00
+  u6/Rpipe_reg[2]/CLK (DFFX1_LVT)          0.00       0.00 r
+  u6/Rpipe_reg[2]/Q (DFFX1_LVT)            0.09       0.09 r
+  u6/Rpipe[2] (PE_9)                       0.00       0.09 r
+  u7/R[2] (PE_8)                           0.00       0.09 r
+  u7/Rpipe_reg[2]/D (DFFX1_LVT)            0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u7/Rpipe_reg[2]/CLK (DFFX1_LVT)          0.00       0.01 r
+  library hold time                        0.00       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: u8/Rpipe_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u9/Rpipe_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u8/Rpipe_reg[7]/CLK (DFFX1_LVT)          0.00       0.01 r
+  u8/Rpipe_reg[7]/Q (DFFX1_LVT)            0.08       0.09 r
+  u8/Rpipe[7] (PE_7)                       0.00       0.09 r
+  u9/R[7] (PE_6)                           0.00       0.09 r
+  u9/Rpipe_reg[7]/D (DFFX1_LVT)            0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u9/Rpipe_reg[7]/CLK (DFFX1_LVT)          0.00       0.01 r
+  library hold time                        0.00       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: u8/Rpipe_reg[6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u9/Rpipe_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u8/Rpipe_reg[6]/CLK (DFFX1_LVT)          0.00       0.01 r
+  u8/Rpipe_reg[6]/Q (DFFX1_LVT)            0.08       0.09 r
+  u8/Rpipe[6] (PE_7)                       0.00       0.09 r
+  u9/R[6] (PE_6)                           0.00       0.09 r
+  u9/Rpipe_reg[6]/D (DFFX1_LVT)            0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u9/Rpipe_reg[6]/CLK (DFFX1_LVT)          0.00       0.01 r
+  library hold time                        0.00       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: u6/Rpipe_reg[6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u7/Rpipe_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.00       0.00
+  u6/Rpipe_reg[6]/CLK (DFFX1_LVT)          0.00       0.00 r
+  u6/Rpipe_reg[6]/Q (DFFX1_LVT)            0.08       0.09 r
+  u6/Rpipe[6] (PE_9)                       0.00       0.09 r
+  u7/R[6] (PE_8)                           0.00       0.09 r
+  u7/Rpipe_reg[6]/D (DFFX1_LVT)            0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u7/Rpipe_reg[6]/CLK (DFFX1_LVT)          0.00       0.01 r
+  library hold time                        0.00       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+  Startpoint: u9/Rpipe_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u10/Rpipe_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.02       0.02
+  u9/Rpipe_reg[0]/CLK (DFFX1_LVT)          0.00       0.02 r
+  u9/Rpipe_reg[0]/Q (DFFX1_LVT)            0.08       0.10 r
+  u9/Rpipe[0] (PE_6)                       0.00       0.10 r
+  u10/R[0] (PE_5)                          0.00       0.10 r
+  u10/Rpipe_reg[0]/D (DFFX1_LVT)           0.00 &     0.10 r
+  data arrival time                                   0.10
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.02       0.02
+  u10/Rpipe_reg[0]/CLK (DFFX1_LVT)         0.00       0.02 r
+  library hold time                        0.00       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+  Startpoint: u9/Rpipe_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u10/Rpipe_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u9/Rpipe_reg[3]/CLK (DFFX1_LVT)          0.00       0.01 r
+  u9/Rpipe_reg[3]/Q (DFFX1_LVT)            0.08       0.10 r
+  u9/Rpipe[3] (PE_6)                       0.00       0.10 r
+  u10/R[3] (PE_5)                          0.00       0.10 r
+  u10/Rpipe_reg[3]/D (DFFX1_LVT)           0.00 &     0.10 r
+  data arrival time                                   0.10
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.02       0.02
+  u10/Rpipe_reg[3]/CLK (DFFX1_LVT)         0.00       0.02 r
+  library hold time                        0.00       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+  Startpoint: u6/Rpipe_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u7/Rpipe_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.00       0.00
+  u6/Rpipe_reg[7]/CLK (DFFX1_LVT)          0.00       0.00 r
+  u6/Rpipe_reg[7]/Q (DFFX1_LVT)            0.08       0.09 r
+  u6/Rpipe[7] (PE_9)                       0.00       0.09 r
+  u7/R[7] (PE_8)                           0.00       0.09 r
+  u7/Rpipe_reg[7]/D (DFFX1_LVT)            0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u7/Rpipe_reg[7]/CLK (DFFX1_LVT)          0.00       0.01 r
+  library hold time                        0.00       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+  Startpoint: u6/Rpipe_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u7/Rpipe_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.00       0.00
+  u6/Rpipe_reg[5]/CLK (DFFX1_LVT)          0.00       0.00 r
+  u6/Rpipe_reg[5]/Q (DFFX1_LVT)            0.09       0.09 r
+  u6/Rpipe[5] (PE_9)                       0.00       0.09 r
+  u7/R[5] (PE_8)                           0.00       0.09 r
+  u7/Rpipe_reg[5]/D (DFFX1_LVT)            0.00 &     0.09 r
+  data arrival time                                   0.09
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u7/Rpipe_reg[5]/CLK (DFFX1_LVT)          0.00       0.01 r
+  library hold time                        0.00       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.09
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+  Startpoint: u7/Rpipe_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u8/Rpipe_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u7/Rpipe_reg[2]/CLK (DFFX1_LVT)          0.00       0.01 r
+  u7/Rpipe_reg[2]/Q (DFFX1_LVT)            0.09       0.10 r
+  u7/Rpipe[2] (PE_8)                       0.00       0.10 r
+  u8/R[2] (PE_7)                           0.00       0.10 r
+  u8/Rpipe_reg[2]/D (DFFX1_LVT)            0.00 &     0.10 r
+  data arrival time                                   0.10
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.02       0.02
+  u8/Rpipe_reg[2]/CLK (DFFX1_LVT)          0.00       0.02 r
+  library hold time                        0.00       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+  Startpoint: u11/Rpipe_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u12/Rpipe_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.02       0.02
+  u11/Rpipe_reg[2]/CLK (DFFX1_LVT)         0.00       0.02 r
+  u11/Rpipe_reg[2]/Q (DFFX1_LVT)           0.08       0.10 r
+  u11/Rpipe[2] (PE_4)                      0.00       0.10 r
+  u12/R[2] (PE_3)                          0.00       0.10 r
+  u12/Rpipe_reg[2]/D (DFFX1_LVT)           0.00 &     0.10 r
+  data arrival time                                   0.10
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.02       0.02
+  u12/Rpipe_reg[2]/CLK (DFFX1_LVT)         0.00       0.02 r
+  library hold time                        0.00       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+  Startpoint: u9/Rpipe_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u10/Rpipe_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.02       0.02
+  u9/Rpipe_reg[2]/CLK (DFFX1_LVT)          0.00       0.02 r
+  u9/Rpipe_reg[2]/Q (DFFX1_LVT)            0.08       0.10 r
+  u9/Rpipe[2] (PE_6)                       0.00       0.10 r
+  u10/R[2] (PE_5)                          0.00       0.10 r
+  u10/Rpipe_reg[2]/D (DFFX1_LVT)           0.00 &     0.10 r
+  data arrival time                                   0.10
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.02       0.02
+  u10/Rpipe_reg[2]/CLK (DFFX1_LVT)         0.00       0.02 r
+  library hold time                        0.00       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+  Startpoint: u9/Rpipe_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u10/Rpipe_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.01       0.01
+  u9/Rpipe_reg[1]/CLK (DFFX1_LVT)          0.00       0.01 r
+  u9/Rpipe_reg[1]/Q (DFFX1_LVT)            0.09       0.10 r
+  u9/Rpipe[1] (PE_6)                       0.00       0.10 r
+  u10/R[1] (PE_5)                          0.00       0.10 r
+  u10/Rpipe_reg[1]/D (DFFX1_LVT)           0.00 &     0.10 r
+  data arrival time                                   0.10
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.02       0.02
+  u10/Rpipe_reg[1]/CLK (DFFX1_LVT)         0.00       0.02 r
+  library hold time                        0.00       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+  Startpoint: u11/Rpipe_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u12/Rpipe_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.02       0.02
+  u11/Rpipe_reg[7]/CLK (DFFX1_LVT)         0.00       0.02 r
+  u11/Rpipe_reg[7]/Q (DFFX1_LVT)           0.08       0.10 r
+  u11/Rpipe[7] (PE_4)                      0.00       0.10 r
+  u12/R[7] (PE_3)                          0.00       0.10 r
+  u12/Rpipe_reg[7]/D (DFFX1_LVT)           0.00 &     0.10 r
+  data arrival time                                   0.10
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.02       0.02
+  u12/Rpipe_reg[7]/CLK (DFFX1_LVT)         0.00       0.02 r
+  library hold time                        0.00       0.02
+  data required time                                  0.02
+  -----------------------------------------------------------
+  data required time                                  0.02
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+1

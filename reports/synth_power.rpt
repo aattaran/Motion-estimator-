@@ -1,0 +1,125 @@
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort medium
+Design : motion_estimator
+Version: I-2013.12-SP2
+Date   : Sun Dec 18 15:21:05 2016
+****************************************
+
+
+Library(s) Used:
+
+    saed32hvt_ff0p85v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ff0p85v125c.db)
+    saed32lvt_ff0p85v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ff0p85v125c.db)
+
+
+Operating Conditions: ff0p85v125c   Library: saed32hvt_ff0p85v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+motion_estimator       8000              saed32hvt_ff0p85v125c
+PE_15                  8000              saed32hvt_ff0p85v125c
+comparator             8000              saed32hvt_ff0p85v125c
+control                8000              saed32hvt_ff0p85v125c
+PE_0                   8000              saed32hvt_ff0p85v125c
+PE_1                   8000              saed32hvt_ff0p85v125c
+PE_2                   8000              saed32hvt_ff0p85v125c
+PE_3                   8000              saed32hvt_ff0p85v125c
+PE_4                   8000              saed32hvt_ff0p85v125c
+PE_5                   8000              saed32hvt_ff0p85v125c
+PE_6                   8000              saed32hvt_ff0p85v125c
+PE_7                   8000              saed32hvt_ff0p85v125c
+PE_8                   8000              saed32hvt_ff0p85v125c
+PE_9                   8000              saed32hvt_ff0p85v125c
+PE_10                  8000              saed32hvt_ff0p85v125c
+PE_11                  8000              saed32hvt_ff0p85v125c
+PE_12                  8000              saed32hvt_ff0p85v125c
+PE_13                  8000              saed32hvt_ff0p85v125c
+PE_14                  8000              saed32hvt_ff0p85v125c
+control_DW01_inc_0     ForQA             saed32hvt_ff0p85v125c
+control_DW01_inc_1     ForQA             saed32hvt_ff0p85v125c
+PE_0_DW01_add_0        ForQA             saed32hvt_ff0p85v125c
+PE_0_DW01_sub_0        ForQA             saed32hvt_ff0p85v125c
+PE_0_DW01_sub_1        ForQA             saed32hvt_ff0p85v125c
+PE_1_DW01_add_0        ForQA             saed32hvt_ff0p85v125c
+PE_1_DW01_sub_0        ForQA             saed32hvt_ff0p85v125c
+PE_1_DW01_sub_1        ForQA             saed32hvt_ff0p85v125c
+PE_2_DW01_add_0        ForQA             saed32hvt_ff0p85v125c
+PE_2_DW01_sub_0        ForQA             saed32hvt_ff0p85v125c
+PE_2_DW01_sub_1        ForQA             saed32hvt_ff0p85v125c
+PE_3_DW01_add_0        ForQA             saed32hvt_ff0p85v125c
+PE_3_DW01_sub_0        ForQA             saed32hvt_ff0p85v125c
+PE_3_DW01_sub_1        ForQA             saed32hvt_ff0p85v125c
+PE_4_DW01_add_0        ForQA             saed32hvt_ff0p85v125c
+PE_4_DW01_sub_0        ForQA             saed32hvt_ff0p85v125c
+PE_4_DW01_sub_1        ForQA             saed32hvt_ff0p85v125c
+PE_5_DW01_add_0        ForQA             saed32hvt_ff0p85v125c
+PE_5_DW01_sub_0        ForQA             saed32hvt_ff0p85v125c
+PE_5_DW01_sub_1        ForQA             saed32hvt_ff0p85v125c
+PE_6_DW01_add_0        ForQA             saed32hvt_ff0p85v125c
+PE_6_DW01_sub_0        ForQA             saed32hvt_ff0p85v125c
+PE_6_DW01_sub_1        ForQA             saed32hvt_ff0p85v125c
+PE_7_DW01_add_0        ForQA             saed32hvt_ff0p85v125c
+PE_7_DW01_sub_0        ForQA             saed32hvt_ff0p85v125c
+PE_7_DW01_sub_1        ForQA             saed32hvt_ff0p85v125c
+PE_8_DW01_add_0        ForQA             saed32hvt_ff0p85v125c
+PE_8_DW01_sub_0        ForQA             saed32hvt_ff0p85v125c
+PE_8_DW01_sub_1        ForQA             saed32hvt_ff0p85v125c
+PE_9_DW01_add_0        ForQA             saed32hvt_ff0p85v125c
+PE_9_DW01_sub_0        ForQA             saed32hvt_ff0p85v125c
+PE_9_DW01_sub_1        ForQA             saed32hvt_ff0p85v125c
+PE_10_DW01_add_0       ForQA             saed32hvt_ff0p85v125c
+PE_10_DW01_sub_0       ForQA             saed32hvt_ff0p85v125c
+PE_10_DW01_sub_1       ForQA             saed32hvt_ff0p85v125c
+PE_11_DW01_add_0       ForQA             saed32hvt_ff0p85v125c
+PE_11_DW01_sub_0       ForQA             saed32hvt_ff0p85v125c
+PE_11_DW01_sub_1       ForQA             saed32hvt_ff0p85v125c
+PE_12_DW01_add_0       ForQA             saed32hvt_ff0p85v125c
+PE_12_DW01_sub_0       ForQA             saed32hvt_ff0p85v125c
+PE_12_DW01_sub_1       ForQA             saed32hvt_ff0p85v125c
+PE_13_DW01_add_0       ForQA             saed32hvt_ff0p85v125c
+PE_13_DW01_sub_0       ForQA             saed32hvt_ff0p85v125c
+PE_13_DW01_sub_1       ForQA             saed32hvt_ff0p85v125c
+PE_14_DW01_add_0       ForQA             saed32hvt_ff0p85v125c
+PE_14_DW01_sub_0       ForQA             saed32hvt_ff0p85v125c
+PE_14_DW01_sub_1       ForQA             saed32hvt_ff0p85v125c
+PE_15_DW01_add_0       ForQA             saed32hvt_ff0p85v125c
+PE_15_DW01_sub_0       ForQA             saed32hvt_ff0p85v125c
+PE_15_DW01_sub_1       ForQA             saed32hvt_ff0p85v125c
+
+
+Global Operating Voltage = 0.85 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   0.0000 uW    (0%)
+  Net Switching Power  =  54.4260 uW  (100%)
+                         ---------
+Total Dynamic Power    =  54.4260 uW  (100%)
+
+Cell Leakage Power     = 189.7618 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            7.0861        4.1653e+07           48.7395  (  19.96%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000           47.3399        1.4811e+08          195.4484  (  80.04%)
+--------------------------------------------------------------------------------------------------
+Total              0.0000 uW        54.4260 uW     1.8976e+08 pW       244.1878 uW
+1

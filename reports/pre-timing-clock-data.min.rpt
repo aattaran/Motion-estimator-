@@ -1,0 +1,43 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-sort_by slack
+Design : motion_estimator
+Version: J-2014.12-SP3
+Date   : Sun Dec 18 15:21:49 2016
+****************************************
+
+Warning: There are 9 invalid end points for constrained paths. (UITE-416)
+
+  Startpoint: u9/Rpipe_reg[7]
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u10/Rpipe_reg[7]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  u9/Rpipe_reg[7]/CLK (DFFX1_LVT)          0.00       0.00 r
+  u9/Rpipe_reg[7]/Q (DFFX1_LVT)            0.07       0.07 r
+  u10/Rpipe_reg[7]/D (DFFX1_LVT)           0.00       0.07 r
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock reconvergence pessimism            0.00       0.00
+  u10/Rpipe_reg[7]/CLK (DFFX1_LVT)                    0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  ---------------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  ---------------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+1

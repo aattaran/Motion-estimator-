@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : cell
+Design : motion_estimator
+Version: I-2013.12-SP2
+Date   : Sun Dec 18 15:21:04 2016
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+u0                        PE_15                           451.613891
+                                                                    h, n
+u1                        PE_14                           354.785024
+                                                                    h, n
+u2                        PE_13                           354.785024
+                                                                    h, n
+u3                        PE_12                           351.735295
+                                                                    h, n
+u4                        PE_11                           354.785024
+                                                                    h, n
+u5                        PE_10                           354.785024
+                                                                    h, n
+u6                        PE_9                            354.785024
+                                                                    h, n
+u7                        PE_8                            354.276736
+                                                                    h, n
+u8                        PE_7                            354.785024
+                                                                    h, n
+u9                        PE_6                            353.260159
+                                                                    h, n
+u10                       PE_5                            357.326464
+                                                                    h, n
+u11                       PE_4                            354.276736
+                                                                    h, n
+u12                       PE_3                            354.785024
+                                                                    h, n
+u13                       PE_2                            355.293312
+                                                                    h, n
+u14                       PE_1                            354.785024
+                                                                    h, n
+u15                       PE_0                            354.785024
+                                                                    h, n
+u21                       comparator                      580.210758
+                                                                    h, n
+u22                       control                         480.078020
+                                                                    h, n
+--------------------------------------------------------------------------------
+Total 18 cells                                            6831.136584
+1

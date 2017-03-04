@@ -1,0 +1,16 @@
+ 
+****************************************
+check_design summary:
+Version:     I-2013.12-SP2
+Date:        Sun Dec 18 15:20:47 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+--------------------------------------------------------------------------------
+
+Warning: In design 'PE', cell 'B_7' does not drive any nets. (LINT-1)
+Warning: In design 'PE', cell 'B_8' does not drive any nets. (LINT-1)
+1

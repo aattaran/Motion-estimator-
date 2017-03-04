@@ -1,0 +1,611 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : motion_estimator
+Version: I-2013.12-SP2
+Date   : Sun Dec 18 15:21:04 2016
+****************************************
+
+Operating Conditions: ff0p85v125c   Library: saed32hvt_ff0p85v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: S1[0] (input port clocked by clk)
+  Endpoint: u13/Accumulate_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  motion_estimator   8000                  saed32hvt_ff0p85v125c
+  PE_2               8000                  saed32hvt_ff0p85v125c
+  PE_2_DW01_add_0    ForQA                 saed32hvt_ff0p85v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  S1[0] (in)                               0.00       1.00 r
+  u13/S1[0] (PE_2)                         0.00       1.00 r
+  u13/U44/Y (AO22X1_LVT)                   0.05       1.05 r
+  u13/U20/Y (INVX1_LVT)                    0.01       1.05 f
+  u13/U36/Y (NOR2X1_LVT)                   0.04       1.09 r
+  u13/U46/Y (AND2X1_HVT)                   0.03       1.12 r
+  u13/U47/Y (OA222X1_HVT)                  0.06       1.18 r
+  u13/U48/Y (AO221X1_HVT)                  0.05       1.23 r
+  u13/U49/Y (OA221X1_HVT)                  0.05       1.27 r
+  u13/U50/Y (AO221X1_HVT)                  0.05       1.32 r
+  u13/U51/Y (OA221X1_HVT)                  0.05       1.37 r
+  u13/U18/Y (AO21X1_LVT)                   0.02       1.39 r
+  u13/U15/Y (AOI22X1_LVT)                  0.05       1.45 f
+  u13/U16/Y (INVX1_LVT)                    0.03       1.47 r
+  u13/U43/Y (AO22X1_HVT)                   0.05       1.53 r
+  u13/add_22/B[0] (PE_2_DW01_add_0)        0.00       1.53 r
+  u13/add_22/U2/Y (AND2X1_LVT)             0.02       1.55 r
+  u13/add_22/U1_1/CO (FADDX1_HVT)          0.06       1.62 r
+  u13/add_22/U1_2/CO (FADDX1_HVT)          0.07       1.68 r
+  u13/add_22/U1_3/CO (FADDX1_HVT)          0.07       1.75 r
+  u13/add_22/U1_4/CO (FADDX1_HVT)          0.07       1.81 r
+  u13/add_22/U1_5/CO (FADDX1_HVT)          0.07       1.88 r
+  u13/add_22/U1_6/CO (FADDX1_HVT)          0.07       1.95 r
+  u13/add_22/U1_7/CO (FADDX1_HVT)          0.06       2.01 r
+  u13/add_22/SUM[8] (PE_2_DW01_add_0)      0.00       2.01 r
+  u13/U19/Y (AND2X1_LVT)                   0.04       2.04 r
+  u13/U42/Y (AO221X1_HVT)                  0.05       2.09 r
+  u13/Accumulate_reg[0]/D (DFFX1_HVT)      0.00       2.09 r
+  data arrival time                                   2.09
+
+  clock clk (rise edge)                    3.84       3.84
+  clock network delay (ideal)              0.00       3.84
+  u13/Accumulate_reg[0]/CLK (DFFX1_HVT)
+                                           0.00       3.84 r
+  library setup time                      -0.04       3.80
+  data required time                                  3.80
+  -----------------------------------------------------------
+  data required time                                  3.80
+  data arrival time                                  -2.09
+  -----------------------------------------------------------
+  slack (MET)                                         1.70
+
+
+  Startpoint: S1[0] (input port clocked by clk)
+  Endpoint: u13/Accumulate_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  motion_estimator   8000                  saed32hvt_ff0p85v125c
+  PE_2               8000                  saed32hvt_ff0p85v125c
+  PE_2_DW01_add_0    ForQA                 saed32hvt_ff0p85v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  S1[0] (in)                               0.00       1.00 r
+  u13/S1[0] (PE_2)                         0.00       1.00 r
+  u13/U44/Y (AO22X1_LVT)                   0.05       1.05 r
+  u13/U20/Y (INVX1_LVT)                    0.01       1.05 f
+  u13/U36/Y (NOR2X1_LVT)                   0.04       1.09 r
+  u13/U46/Y (AND2X1_HVT)                   0.03       1.12 r
+  u13/U47/Y (OA222X1_HVT)                  0.06       1.18 r
+  u13/U48/Y (AO221X1_HVT)                  0.05       1.23 r
+  u13/U49/Y (OA221X1_HVT)                  0.05       1.27 r
+  u13/U50/Y (AO221X1_HVT)                  0.05       1.32 r
+  u13/U51/Y (OA221X1_HVT)                  0.05       1.37 r
+  u13/U18/Y (AO21X1_LVT)                   0.02       1.39 r
+  u13/U15/Y (AOI22X1_LVT)                  0.05       1.45 f
+  u13/U16/Y (INVX1_LVT)                    0.03       1.47 r
+  u13/U43/Y (AO22X1_HVT)                   0.05       1.53 r
+  u13/add_22/B[0] (PE_2_DW01_add_0)        0.00       1.53 r
+  u13/add_22/U2/Y (AND2X1_LVT)             0.02       1.55 r
+  u13/add_22/U1_1/CO (FADDX1_HVT)          0.06       1.62 r
+  u13/add_22/U1_2/CO (FADDX1_HVT)          0.07       1.68 r
+  u13/add_22/U1_3/CO (FADDX1_HVT)          0.07       1.75 r
+  u13/add_22/U1_4/CO (FADDX1_HVT)          0.07       1.81 r
+  u13/add_22/U1_5/CO (FADDX1_HVT)          0.07       1.88 r
+  u13/add_22/U1_6/CO (FADDX1_HVT)          0.07       1.95 r
+  u13/add_22/U1_7/CO (FADDX1_HVT)          0.06       2.01 r
+  u13/add_22/SUM[8] (PE_2_DW01_add_0)      0.00       2.01 r
+  u13/U19/Y (AND2X1_LVT)                   0.04       2.04 r
+  u13/U45/Y (AO221X1_LVT)                  0.04       2.08 r
+  u13/Accumulate_reg[7]/D (DFFX1_HVT)      0.00       2.08 r
+  data arrival time                                   2.08
+
+  clock clk (rise edge)                    3.84       3.84
+  clock network delay (ideal)              0.00       3.84
+  u13/Accumulate_reg[7]/CLK (DFFX1_HVT)
+                                           0.00       3.84 r
+  library setup time                      -0.04       3.80
+  data required time                                  3.80
+  -----------------------------------------------------------
+  data required time                                  3.80
+  data arrival time                                  -2.08
+  -----------------------------------------------------------
+  slack (MET)                                         1.72
+
+
+  Startpoint: S1[0] (input port clocked by clk)
+  Endpoint: u13/Accumulate_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  motion_estimator   8000                  saed32hvt_ff0p85v125c
+  PE_2               8000                  saed32hvt_ff0p85v125c
+  PE_2_DW01_add_0    ForQA                 saed32hvt_ff0p85v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  S1[0] (in)                               0.00       1.00 r
+  u13/S1[0] (PE_2)                         0.00       1.00 r
+  u13/U44/Y (AO22X1_LVT)                   0.05       1.05 r
+  u13/U20/Y (INVX1_LVT)                    0.01       1.05 f
+  u13/U36/Y (NOR2X1_LVT)                   0.04       1.09 r
+  u13/U46/Y (AND2X1_HVT)                   0.03       1.12 r
+  u13/U47/Y (OA222X1_HVT)                  0.06       1.18 r
+  u13/U48/Y (AO221X1_HVT)                  0.05       1.23 r
+  u13/U49/Y (OA221X1_HVT)                  0.05       1.27 r
+  u13/U50/Y (AO221X1_HVT)                  0.05       1.32 r
+  u13/U51/Y (OA221X1_HVT)                  0.05       1.37 r
+  u13/U18/Y (AO21X1_LVT)                   0.02       1.39 r
+  u13/U15/Y (AOI22X1_LVT)                  0.05       1.45 f
+  u13/U16/Y (INVX1_LVT)                    0.03       1.47 r
+  u13/U43/Y (AO22X1_HVT)                   0.05       1.53 r
+  u13/add_22/B[0] (PE_2_DW01_add_0)        0.00       1.53 r
+  u13/add_22/U2/Y (AND2X1_LVT)             0.02       1.55 r
+  u13/add_22/U1_1/CO (FADDX1_HVT)          0.06       1.62 r
+  u13/add_22/U1_2/CO (FADDX1_HVT)          0.07       1.68 r
+  u13/add_22/U1_3/CO (FADDX1_HVT)          0.07       1.75 r
+  u13/add_22/U1_4/CO (FADDX1_HVT)          0.07       1.81 r
+  u13/add_22/U1_5/CO (FADDX1_HVT)          0.07       1.88 r
+  u13/add_22/U1_6/CO (FADDX1_HVT)          0.07       1.95 r
+  u13/add_22/U1_7/CO (FADDX1_HVT)          0.06       2.01 r
+  u13/add_22/SUM[8] (PE_2_DW01_add_0)      0.00       2.01 r
+  u13/U19/Y (AND2X1_LVT)                   0.04       2.04 r
+  u13/U14/Y (AO221X1_LVT)                  0.04       2.08 r
+  u13/Accumulate_reg[6]/D (DFFX1_HVT)      0.00       2.08 r
+  data arrival time                                   2.08
+
+  clock clk (rise edge)                    3.84       3.84
+  clock network delay (ideal)              0.00       3.84
+  u13/Accumulate_reg[6]/CLK (DFFX1_HVT)
+                                           0.00       3.84 r
+  library setup time                      -0.04       3.80
+  data required time                                  3.80
+  -----------------------------------------------------------
+  data required time                                  3.80
+  data arrival time                                  -2.08
+  -----------------------------------------------------------
+  slack (MET)                                         1.72
+
+
+  Startpoint: S1[0] (input port clocked by clk)
+  Endpoint: u13/Accumulate_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  motion_estimator   8000                  saed32hvt_ff0p85v125c
+  PE_2               8000                  saed32hvt_ff0p85v125c
+  PE_2_DW01_add_0    ForQA                 saed32hvt_ff0p85v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  S1[0] (in)                               0.00       1.00 r
+  u13/S1[0] (PE_2)                         0.00       1.00 r
+  u13/U44/Y (AO22X1_LVT)                   0.05       1.05 r
+  u13/U20/Y (INVX1_LVT)                    0.01       1.05 f
+  u13/U36/Y (NOR2X1_LVT)                   0.04       1.09 r
+  u13/U46/Y (AND2X1_HVT)                   0.03       1.12 r
+  u13/U47/Y (OA222X1_HVT)                  0.06       1.18 r
+  u13/U48/Y (AO221X1_HVT)                  0.05       1.23 r
+  u13/U49/Y (OA221X1_HVT)                  0.05       1.27 r
+  u13/U50/Y (AO221X1_HVT)                  0.05       1.32 r
+  u13/U51/Y (OA221X1_HVT)                  0.05       1.37 r
+  u13/U18/Y (AO21X1_LVT)                   0.02       1.39 r
+  u13/U15/Y (AOI22X1_LVT)                  0.05       1.45 f
+  u13/U16/Y (INVX1_LVT)                    0.03       1.47 r
+  u13/U43/Y (AO22X1_HVT)                   0.05       1.53 r
+  u13/add_22/B[0] (PE_2_DW01_add_0)        0.00       1.53 r
+  u13/add_22/U2/Y (AND2X1_LVT)             0.02       1.55 r
+  u13/add_22/U1_1/CO (FADDX1_HVT)          0.06       1.62 r
+  u13/add_22/U1_2/CO (FADDX1_HVT)          0.07       1.68 r
+  u13/add_22/U1_3/CO (FADDX1_HVT)          0.07       1.75 r
+  u13/add_22/U1_4/CO (FADDX1_HVT)          0.07       1.81 r
+  u13/add_22/U1_5/CO (FADDX1_HVT)          0.07       1.88 r
+  u13/add_22/U1_6/CO (FADDX1_HVT)          0.07       1.95 r
+  u13/add_22/U1_7/CO (FADDX1_HVT)          0.06       2.01 r
+  u13/add_22/SUM[8] (PE_2_DW01_add_0)      0.00       2.01 r
+  u13/U19/Y (AND2X1_LVT)                   0.04       2.04 r
+  u13/U13/Y (AO221X1_LVT)                  0.04       2.08 r
+  u13/Accumulate_reg[5]/D (DFFX1_HVT)      0.00       2.08 r
+  data arrival time                                   2.08
+
+  clock clk (rise edge)                    3.84       3.84
+  clock network delay (ideal)              0.00       3.84
+  u13/Accumulate_reg[5]/CLK (DFFX1_HVT)
+                                           0.00       3.84 r
+  library setup time                      -0.04       3.80
+  data required time                                  3.80
+  -----------------------------------------------------------
+  data required time                                  3.80
+  data arrival time                                  -2.08
+  -----------------------------------------------------------
+  slack (MET)                                         1.72
+
+
+  Startpoint: S1[0] (input port clocked by clk)
+  Endpoint: u13/Accumulate_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  motion_estimator   8000                  saed32hvt_ff0p85v125c
+  PE_2               8000                  saed32hvt_ff0p85v125c
+  PE_2_DW01_add_0    ForQA                 saed32hvt_ff0p85v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  S1[0] (in)                               0.00       1.00 r
+  u13/S1[0] (PE_2)                         0.00       1.00 r
+  u13/U44/Y (AO22X1_LVT)                   0.05       1.05 r
+  u13/U20/Y (INVX1_LVT)                    0.01       1.05 f
+  u13/U36/Y (NOR2X1_LVT)                   0.04       1.09 r
+  u13/U46/Y (AND2X1_HVT)                   0.03       1.12 r
+  u13/U47/Y (OA222X1_HVT)                  0.06       1.18 r
+  u13/U48/Y (AO221X1_HVT)                  0.05       1.23 r
+  u13/U49/Y (OA221X1_HVT)                  0.05       1.27 r
+  u13/U50/Y (AO221X1_HVT)                  0.05       1.32 r
+  u13/U51/Y (OA221X1_HVT)                  0.05       1.37 r
+  u13/U18/Y (AO21X1_LVT)                   0.02       1.39 r
+  u13/U15/Y (AOI22X1_LVT)                  0.05       1.45 f
+  u13/U16/Y (INVX1_LVT)                    0.03       1.47 r
+  u13/U43/Y (AO22X1_HVT)                   0.05       1.53 r
+  u13/add_22/B[0] (PE_2_DW01_add_0)        0.00       1.53 r
+  u13/add_22/U2/Y (AND2X1_LVT)             0.02       1.55 r
+  u13/add_22/U1_1/CO (FADDX1_HVT)          0.06       1.62 r
+  u13/add_22/U1_2/CO (FADDX1_HVT)          0.07       1.68 r
+  u13/add_22/U1_3/CO (FADDX1_HVT)          0.07       1.75 r
+  u13/add_22/U1_4/CO (FADDX1_HVT)          0.07       1.81 r
+  u13/add_22/U1_5/CO (FADDX1_HVT)          0.07       1.88 r
+  u13/add_22/U1_6/CO (FADDX1_HVT)          0.07       1.95 r
+  u13/add_22/U1_7/CO (FADDX1_HVT)          0.06       2.01 r
+  u13/add_22/SUM[8] (PE_2_DW01_add_0)      0.00       2.01 r
+  u13/U19/Y (AND2X1_LVT)                   0.04       2.04 r
+  u13/U12/Y (AO221X1_LVT)                  0.04       2.08 r
+  u13/Accumulate_reg[4]/D (DFFX1_HVT)      0.00       2.08 r
+  data arrival time                                   2.08
+
+  clock clk (rise edge)                    3.84       3.84
+  clock network delay (ideal)              0.00       3.84
+  u13/Accumulate_reg[4]/CLK (DFFX1_HVT)
+                                           0.00       3.84 r
+  library setup time                      -0.04       3.80
+  data required time                                  3.80
+  -----------------------------------------------------------
+  data required time                                  3.80
+  data arrival time                                  -2.08
+  -----------------------------------------------------------
+  slack (MET)                                         1.72
+
+
+  Startpoint: S1[0] (input port clocked by clk)
+  Endpoint: u13/Accumulate_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  motion_estimator   8000                  saed32hvt_ff0p85v125c
+  PE_2               8000                  saed32hvt_ff0p85v125c
+  PE_2_DW01_add_0    ForQA                 saed32hvt_ff0p85v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  S1[0] (in)                               0.00       1.00 r
+  u13/S1[0] (PE_2)                         0.00       1.00 r
+  u13/U44/Y (AO22X1_LVT)                   0.05       1.05 r
+  u13/U20/Y (INVX1_LVT)                    0.01       1.05 f
+  u13/U36/Y (NOR2X1_LVT)                   0.04       1.09 r
+  u13/U46/Y (AND2X1_HVT)                   0.03       1.12 r
+  u13/U47/Y (OA222X1_HVT)                  0.06       1.18 r
+  u13/U48/Y (AO221X1_HVT)                  0.05       1.23 r
+  u13/U49/Y (OA221X1_HVT)                  0.05       1.27 r
+  u13/U50/Y (AO221X1_HVT)                  0.05       1.32 r
+  u13/U51/Y (OA221X1_HVT)                  0.05       1.37 r
+  u13/U18/Y (AO21X1_LVT)                   0.02       1.39 r
+  u13/U15/Y (AOI22X1_LVT)                  0.05       1.45 f
+  u13/U16/Y (INVX1_LVT)                    0.03       1.47 r
+  u13/U43/Y (AO22X1_HVT)                   0.05       1.53 r
+  u13/add_22/B[0] (PE_2_DW01_add_0)        0.00       1.53 r
+  u13/add_22/U2/Y (AND2X1_LVT)             0.02       1.55 r
+  u13/add_22/U1_1/CO (FADDX1_HVT)          0.06       1.62 r
+  u13/add_22/U1_2/CO (FADDX1_HVT)          0.07       1.68 r
+  u13/add_22/U1_3/CO (FADDX1_HVT)          0.07       1.75 r
+  u13/add_22/U1_4/CO (FADDX1_HVT)          0.07       1.81 r
+  u13/add_22/U1_5/CO (FADDX1_HVT)          0.07       1.88 r
+  u13/add_22/U1_6/CO (FADDX1_HVT)          0.07       1.95 r
+  u13/add_22/U1_7/CO (FADDX1_HVT)          0.06       2.01 r
+  u13/add_22/SUM[8] (PE_2_DW01_add_0)      0.00       2.01 r
+  u13/U19/Y (AND2X1_LVT)                   0.04       2.04 r
+  u13/U11/Y (AO221X1_LVT)                  0.04       2.08 r
+  u13/Accumulate_reg[3]/D (DFFX1_HVT)      0.00       2.08 r
+  data arrival time                                   2.08
+
+  clock clk (rise edge)                    3.84       3.84
+  clock network delay (ideal)              0.00       3.84
+  u13/Accumulate_reg[3]/CLK (DFFX1_HVT)
+                                           0.00       3.84 r
+  library setup time                      -0.04       3.80
+  data required time                                  3.80
+  -----------------------------------------------------------
+  data required time                                  3.80
+  data arrival time                                  -2.08
+  -----------------------------------------------------------
+  slack (MET)                                         1.72
+
+
+  Startpoint: S1[0] (input port clocked by clk)
+  Endpoint: u13/Accumulate_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  motion_estimator   8000                  saed32hvt_ff0p85v125c
+  PE_2               8000                  saed32hvt_ff0p85v125c
+  PE_2_DW01_add_0    ForQA                 saed32hvt_ff0p85v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  S1[0] (in)                               0.00       1.00 r
+  u13/S1[0] (PE_2)                         0.00       1.00 r
+  u13/U44/Y (AO22X1_LVT)                   0.05       1.05 r
+  u13/U20/Y (INVX1_LVT)                    0.01       1.05 f
+  u13/U36/Y (NOR2X1_LVT)                   0.04       1.09 r
+  u13/U46/Y (AND2X1_HVT)                   0.03       1.12 r
+  u13/U47/Y (OA222X1_HVT)                  0.06       1.18 r
+  u13/U48/Y (AO221X1_HVT)                  0.05       1.23 r
+  u13/U49/Y (OA221X1_HVT)                  0.05       1.27 r
+  u13/U50/Y (AO221X1_HVT)                  0.05       1.32 r
+  u13/U51/Y (OA221X1_HVT)                  0.05       1.37 r
+  u13/U18/Y (AO21X1_LVT)                   0.02       1.39 r
+  u13/U15/Y (AOI22X1_LVT)                  0.05       1.45 f
+  u13/U16/Y (INVX1_LVT)                    0.03       1.47 r
+  u13/U43/Y (AO22X1_HVT)                   0.05       1.53 r
+  u13/add_22/B[0] (PE_2_DW01_add_0)        0.00       1.53 r
+  u13/add_22/U2/Y (AND2X1_LVT)             0.02       1.55 r
+  u13/add_22/U1_1/CO (FADDX1_HVT)          0.06       1.62 r
+  u13/add_22/U1_2/CO (FADDX1_HVT)          0.07       1.68 r
+  u13/add_22/U1_3/CO (FADDX1_HVT)          0.07       1.75 r
+  u13/add_22/U1_4/CO (FADDX1_HVT)          0.07       1.81 r
+  u13/add_22/U1_5/CO (FADDX1_HVT)          0.07       1.88 r
+  u13/add_22/U1_6/CO (FADDX1_HVT)          0.07       1.95 r
+  u13/add_22/U1_7/CO (FADDX1_HVT)          0.06       2.01 r
+  u13/add_22/SUM[8] (PE_2_DW01_add_0)      0.00       2.01 r
+  u13/U19/Y (AND2X1_LVT)                   0.04       2.04 r
+  u13/U10/Y (AO221X1_LVT)                  0.04       2.08 r
+  u13/Accumulate_reg[2]/D (DFFX1_HVT)      0.00       2.08 r
+  data arrival time                                   2.08
+
+  clock clk (rise edge)                    3.84       3.84
+  clock network delay (ideal)              0.00       3.84
+  u13/Accumulate_reg[2]/CLK (DFFX1_HVT)
+                                           0.00       3.84 r
+  library setup time                      -0.04       3.80
+  data required time                                  3.80
+  -----------------------------------------------------------
+  data required time                                  3.80
+  data arrival time                                  -2.08
+  -----------------------------------------------------------
+  slack (MET)                                         1.72
+
+
+  Startpoint: S1[0] (input port clocked by clk)
+  Endpoint: u13/Accumulate_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  motion_estimator   8000                  saed32hvt_ff0p85v125c
+  PE_2               8000                  saed32hvt_ff0p85v125c
+  PE_2_DW01_add_0    ForQA                 saed32hvt_ff0p85v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  S1[0] (in)                               0.00       1.00 r
+  u13/S1[0] (PE_2)                         0.00       1.00 r
+  u13/U44/Y (AO22X1_LVT)                   0.05       1.05 r
+  u13/U20/Y (INVX1_LVT)                    0.01       1.05 f
+  u13/U36/Y (NOR2X1_LVT)                   0.04       1.09 r
+  u13/U46/Y (AND2X1_HVT)                   0.03       1.12 r
+  u13/U47/Y (OA222X1_HVT)                  0.06       1.18 r
+  u13/U48/Y (AO221X1_HVT)                  0.05       1.23 r
+  u13/U49/Y (OA221X1_HVT)                  0.05       1.27 r
+  u13/U50/Y (AO221X1_HVT)                  0.05       1.32 r
+  u13/U51/Y (OA221X1_HVT)                  0.05       1.37 r
+  u13/U18/Y (AO21X1_LVT)                   0.02       1.39 r
+  u13/U15/Y (AOI22X1_LVT)                  0.05       1.45 f
+  u13/U16/Y (INVX1_LVT)                    0.03       1.47 r
+  u13/U43/Y (AO22X1_HVT)                   0.05       1.53 r
+  u13/add_22/B[0] (PE_2_DW01_add_0)        0.00       1.53 r
+  u13/add_22/U2/Y (AND2X1_LVT)             0.02       1.55 r
+  u13/add_22/U1_1/CO (FADDX1_HVT)          0.06       1.62 r
+  u13/add_22/U1_2/CO (FADDX1_HVT)          0.07       1.68 r
+  u13/add_22/U1_3/CO (FADDX1_HVT)          0.07       1.75 r
+  u13/add_22/U1_4/CO (FADDX1_HVT)          0.07       1.81 r
+  u13/add_22/U1_5/CO (FADDX1_HVT)          0.07       1.88 r
+  u13/add_22/U1_6/CO (FADDX1_HVT)          0.07       1.95 r
+  u13/add_22/U1_7/CO (FADDX1_HVT)          0.06       2.01 r
+  u13/add_22/SUM[8] (PE_2_DW01_add_0)      0.00       2.01 r
+  u13/U19/Y (AND2X1_LVT)                   0.04       2.04 r
+  u13/U9/Y (AO221X1_LVT)                   0.04       2.08 r
+  u13/Accumulate_reg[1]/D (DFFX1_HVT)      0.00       2.08 r
+  data arrival time                                   2.08
+
+  clock clk (rise edge)                    3.84       3.84
+  clock network delay (ideal)              0.00       3.84
+  u13/Accumulate_reg[1]/CLK (DFFX1_HVT)
+                                           0.00       3.84 r
+  library setup time                      -0.04       3.80
+  data required time                                  3.80
+  -----------------------------------------------------------
+  data required time                                  3.80
+  data arrival time                                  -2.08
+  -----------------------------------------------------------
+  slack (MET)                                         1.72
+
+
+  Startpoint: S1[0] (input port clocked by clk)
+  Endpoint: u1/Accumulate_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  motion_estimator   8000                  saed32hvt_ff0p85v125c
+  PE_14              8000                  saed32hvt_ff0p85v125c
+  PE_14_DW01_add_0   ForQA                 saed32hvt_ff0p85v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  S1[0] (in)                               0.00       1.00 r
+  u1/S1[0] (PE_14)                         0.00       1.00 r
+  u1/U36/Y (AO22X1_LVT)                    0.05       1.05 r
+  u1/U43/Y (AND2X1_HVT)                    0.04       1.08 r
+  u1/U44/Y (AND2X1_HVT)                    0.03       1.11 r
+  u1/U45/Y (OA222X1_HVT)                   0.06       1.17 r
+  u1/U46/Y (AO221X1_HVT)                   0.05       1.22 r
+  u1/U47/Y (OA221X1_HVT)                   0.05       1.27 r
+  u1/U48/Y (AO221X1_HVT)                   0.05       1.32 r
+  u1/U49/Y (OA221X1_HVT)                   0.05       1.36 r
+  u1/U50/Y (AO21X1_HVT)                    0.03       1.40 r
+  u1/U33/Y (AOI22X1_LVT)                   0.05       1.45 f
+  u1/U18/Y (INVX1_LVT)                     0.03       1.48 r
+  u1/U40/Y (AO22X1_LVT)                    0.04       1.51 r
+  u1/add_22/B[0] (PE_14_DW01_add_0)        0.00       1.51 r
+  u1/add_22/U1/Y (AND2X1_LVT)              0.03       1.54 r
+  u1/add_22/U1_1/CO (FADDX1_HVT)           0.06       1.60 r
+  u1/add_22/U1_2/CO (FADDX1_HVT)           0.07       1.67 r
+  u1/add_22/U1_3/CO (FADDX1_HVT)           0.07       1.73 r
+  u1/add_22/U1_4/CO (FADDX1_HVT)           0.07       1.80 r
+  u1/add_22/U1_5/CO (FADDX1_HVT)           0.07       1.87 r
+  u1/add_22/U1_6/CO (FADDX1_HVT)           0.07       1.93 r
+  u1/add_22/U1_7/CO (FADDX1_HVT)           0.06       1.99 r
+  u1/add_22/SUM[8] (PE_14_DW01_add_0)      0.00       1.99 r
+  u1/U26/Y (AND2X1_LVT)                    0.04       2.03 r
+  u1/U29/Y (AO221X1_LVT)                   0.04       2.07 r
+  u1/Accumulate_reg[2]/D (DFFX1_HVT)       0.00       2.07 r
+  data arrival time                                   2.07
+
+  clock clk (rise edge)                    3.84       3.84
+  clock network delay (ideal)              0.00       3.84
+  u1/Accumulate_reg[2]/CLK (DFFX1_HVT)     0.00       3.84 r
+  library setup time                      -0.04       3.80
+  data required time                                  3.80
+  -----------------------------------------------------------
+  data required time                                  3.80
+  data arrival time                                  -2.07
+  -----------------------------------------------------------
+  slack (MET)                                         1.73
+
+
+  Startpoint: S1[0] (input port clocked by clk)
+  Endpoint: u1/Accumulate_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  motion_estimator   8000                  saed32hvt_ff0p85v125c
+  PE_14              8000                  saed32hvt_ff0p85v125c
+  PE_14_DW01_add_0   ForQA                 saed32hvt_ff0p85v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     1.00       1.00 r
+  S1[0] (in)                               0.00       1.00 r
+  u1/S1[0] (PE_14)                         0.00       1.00 r
+  u1/U36/Y (AO22X1_LVT)                    0.05       1.05 r
+  u1/U43/Y (AND2X1_HVT)                    0.04       1.08 r
+  u1/U44/Y (AND2X1_HVT)                    0.03       1.11 r
+  u1/U45/Y (OA222X1_HVT)                   0.06       1.17 r
+  u1/U46/Y (AO221X1_HVT)                   0.05       1.22 r
+  u1/U47/Y (OA221X1_HVT)                   0.05       1.27 r
+  u1/U48/Y (AO221X1_HVT)                   0.05       1.32 r
+  u1/U49/Y (OA221X1_HVT)                   0.05       1.36 r
+  u1/U50/Y (AO21X1_HVT)                    0.03       1.40 r
+  u1/U33/Y (AOI22X1_LVT)                   0.05       1.45 f
+  u1/U18/Y (INVX1_LVT)                     0.03       1.48 r
+  u1/U40/Y (AO22X1_LVT)                    0.04       1.51 r
+  u1/add_22/B[0] (PE_14_DW01_add_0)        0.00       1.51 r
+  u1/add_22/U1/Y (AND2X1_LVT)              0.03       1.54 r
+  u1/add_22/U1_1/CO (FADDX1_HVT)           0.06       1.60 r
+  u1/add_22/U1_2/CO (FADDX1_HVT)           0.07       1.67 r
+  u1/add_22/U1_3/CO (FADDX1_HVT)           0.07       1.73 r
+  u1/add_22/U1_4/CO (FADDX1_HVT)           0.07       1.80 r
+  u1/add_22/U1_5/CO (FADDX1_HVT)           0.07       1.87 r
+  u1/add_22/U1_6/CO (FADDX1_HVT)           0.07       1.93 r
+  u1/add_22/U1_7/CO (FADDX1_HVT)           0.06       1.99 r
+  u1/add_22/SUM[8] (PE_14_DW01_add_0)      0.00       1.99 r
+  u1/U26/Y (AND2X1_LVT)                    0.04       2.03 r
+  u1/U25/Y (AO221X1_LVT)                   0.04       2.07 r
+  u1/Accumulate_reg[1]/D (DFFX1_HVT)       0.00       2.07 r
+  data arrival time                                   2.07
+
+  clock clk (rise edge)                    3.84       3.84
+  clock network delay (ideal)              0.00       3.84
+  u1/Accumulate_reg[1]/CLK (DFFX1_HVT)     0.00       3.84 r
+  library setup time                      -0.04       3.80
+  data required time                                  3.80
+  -----------------------------------------------------------
+  data required time                                  3.80
+  data arrival time                                  -2.07
+  -----------------------------------------------------------
+  slack (MET)                                         1.73
+
+
+1

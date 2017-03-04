@@ -1,0 +1,27 @@
+ 
+****************************************
+check_design summary:
+Version:     I-2013.12-SP2
+Date:        Sun Dec 18 15:20:48 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      5
+    Feedthrough (LINT-29)                                           1
+    Shorted outputs (LINT-31)                                       4
+
+Cells                                                               4
+    Cells do not drive (LINT-1)                                     4
+--------------------------------------------------------------------------------
+
+Warning: In design 'control', cell 'C309' does not drive any nets. (LINT-1)
+Warning: In design 'control', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'control', cell 'B_5' does not drive any nets. (LINT-1)
+Warning: In design 'control', cell 'B_6' does not drive any nets. (LINT-1)
+Warning: In design 'control', input port 'Start' is connected directly to output port 'CompStart'. (LINT-29)
+Warning: In design 'control', output port 'VectorX[3]' is connected directly to output port 'AddressR[3]'. (LINT-31)
+Warning: In design 'control', output port 'VectorX[2]' is connected directly to output port 'AddressR[2]'. (LINT-31)
+Warning: In design 'control', output port 'VectorX[1]' is connected directly to output port 'AddressR[1]'. (LINT-31)
+Warning: In design 'control', output port 'VectorX[0]' is connected directly to output port 'AddressR[0]'. (LINT-31)
+1

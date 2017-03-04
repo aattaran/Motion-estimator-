@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : motion_estimator
+Version: I-2013.12-ICC-SP3
+Date   : Sun Dec 18 15:25:13 2016
+****************************************
+
+Library(s) Used:
+
+    saed32lvt_ff0p85v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ff0p85v125c.db)
+    saed32hvt_ff0p85v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ff0p85v125c.db)
+
+Number of ports:                           73
+Number of nets:                           392
+Number of cells:                           40
+Number of combinational cells:             22
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         22
+Number of references:                      20
+
+Combinational area:               4854.912781
+Buf/Inv area:                      662.299267
+Noncombinational area:            1891.593850
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1028.862977
+
+Total cell area:                  6746.506631
+Total area:                       7775.369608
+1

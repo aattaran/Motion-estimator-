@@ -1,0 +1,98 @@
+ 
+****************************************
+Report : design
+Design : motion_estimator
+Version: I-2013.12-SP2
+Date   : Sun Dec 18 15:21:04 2016
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    saed32hvt_ff0p85v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ff0p85v125c.db)
+    saed32lvt_ff0p85v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ff0p85v125c.db)
+
+Local Link Library:
+
+    {/packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ff0p85v125c.db, /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ff0p85v25c.db, /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ff0p85vn40c.db, /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ff0p85v125c.db, /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ff0p85v25c.db, /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ff0p85vn40c.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : ff0p85v125c
+    Library : saed32hvt_ff0p85v125c
+    Process :   1.01
+    Temperature : 125.00
+    Voltage :   0.85
+    Interconnect Model : best_case_tree
+
+Wire Loading Model:
+
+    Selected automatically from the total cell area.
+
+Name           :   8000
+Location       :   saed32hvt_ff0p85v125c
+Resistance     :   0.0014154
+Capacitance    :   0.00028
+Area           :   0.01
+Slope          :   90.6464
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1    13.94
+     2    31.80
+     3    51.61
+     4    73.61
+     5    98.05
+     6   125.17
+     7   155.23
+     8   188.46
+     9   225.12
+    10   265.45
+    11   309.71
+    12   358.13
+    13   410.96
+    14   468.46
+    15   530.86
+    16   598.42
+    17   671.38
+    18   749.98
+    19   834.49
+    20   925.13
+
+
+
+Wire Loading Model Mode: enclosed.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
