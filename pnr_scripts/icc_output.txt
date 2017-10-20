@@ -1,0 +1,17 @@
+icc_shell> gui_start
+Information: Visibility is turned ON for cells and cell contents because the task is set to Block Implementation (GUI-026)
+icc_shell> source ../../../lib_gen/lib_container.tcl
+/packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ff0p85v125c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ff0p85v25c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ff0p85vn40c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ff0p85v125c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ff0p85v25c.db /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ff0p85vn40c.db
+icc_shell> set mw_logic0_net VSS
+VSS
+icc_shell> set mw_logic1_net VDD
+VDD
+icc_shell> ls
+.                    cts_icc.tcl        floorplan_icc.tcl~   route_icc.tcl
+..                   extract_icc.tcl    icc_output.txt       signoff_icc.tcl
+chip_finish_icc.tcl  filenames.log      init_design_icc.tcl
+command.log          floorplan_icc.tcl  place_icc.tcl
+icc_shell> exit
+
+Thank you...
+
